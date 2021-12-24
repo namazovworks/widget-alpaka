@@ -9,8 +9,99 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<svg display="none">
+		<symbol viewBox="0 0 21 16" id="arrow-right">
+			<path d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9H10V7H0V9ZM10 9H20V7H10V9Z" fill="#FAF8F0"/>
+		</symbol>
+
+		<symbol viewBox="0 0 19 19" id="inst">
+				<path d="M9.48625 4.61988C6.79493 4.61988 4.62411 6.7907 4.62411 9.48202C4.62411 12.1733 6.79493 14.3442 9.48625 14.3442C12.1776 14.3442 14.3484 12.1733 14.3484 9.48202C14.3484 6.7907 12.1776 4.61988 9.48625 4.61988V4.61988ZM9.48625 12.643C7.74705 12.643 6.32522 11.2254 6.32522 9.48202C6.32522 7.73859 7.74282 6.32099 9.48625 6.32099C11.2297 6.32099 12.6473 7.73859 12.6473 9.48202C12.6473 11.2254 11.2254 12.643 9.48625 12.643ZM15.6813 4.42099C15.6813 5.0515 15.1736 5.55507 14.5473 5.55507C14.323 5.55507 14.1037 5.48855 13.9172 5.36394C13.7307 5.23933 13.5854 5.06221 13.4995 4.85498C13.4137 4.64776 13.3912 4.41973 13.435 4.19974C13.4787 3.97975 13.5868 3.77768 13.7454 3.61908C13.904 3.46047 14.106 3.35246 14.326 3.30871C14.546 3.26495 14.774 3.28741 14.9813 3.37324C15.1885 3.45908 15.3656 3.60443 15.4902 3.79093C15.6148 3.97743 15.6813 4.19669 15.6813 4.42099V4.42099ZM18.9016 5.57199C18.8297 4.05284 18.4827 2.70718 17.3698 1.5985C16.2611 0.489811 14.9154 0.142817 13.3963 0.0666481C11.8306 -0.022216 7.13769 -0.022216 5.57199 0.0666481C4.05707 0.138586 2.71141 0.485579 1.5985 1.59426C0.485579 2.70295 0.142817 4.04861 0.0666481 5.56776C-0.022216 7.13346 -0.022216 11.8263 0.0666481 13.392C0.138586 14.9112 0.485579 16.2568 1.5985 17.3655C2.71141 18.4742 4.05284 18.8212 5.57199 18.8974C7.13769 18.9862 11.8306 18.9862 13.3963 18.8974C14.9154 18.8254 16.2611 18.4785 17.3698 17.3655C18.4785 16.2568 18.8254 14.9112 18.9016 13.392C18.9905 11.8263 18.9905 7.13769 18.9016 5.57199V5.57199ZM16.8789 15.072C16.718 15.4799 16.4749 15.8505 16.1648 16.1606C15.8547 16.4707 15.4842 16.7137 15.0762 16.8747C13.8279 17.3698 10.8658 17.2555 9.48625 17.2555C8.10674 17.2555 5.14037 17.3655 3.89627 16.8747C3.48832 16.7137 3.11779 16.4707 2.80769 16.1606C2.49759 15.8505 2.25453 15.4799 2.0936 15.072C1.5985 13.8237 1.71275 10.8615 1.71275 9.48202C1.71275 8.10251 1.60273 5.13614 2.0936 3.89204C2.25453 3.48408 2.49759 3.11356 2.80769 2.80346C3.11779 2.49336 3.48832 2.2503 3.89627 2.08937C5.1446 1.59427 8.10674 1.70852 9.48625 1.70852C10.8658 1.70852 13.8321 1.5985 15.0762 2.08937C15.4842 2.2503 15.8547 2.49336 16.1648 2.80346C16.4749 3.11356 16.718 3.48408 16.8789 3.89204C17.374 5.14037 17.2597 8.10251 17.2597 9.48202C17.2597 10.8615 17.374 13.8279 16.8789 15.072Z" fill="white"/>
+		</symbol>
+
+		<symbol viewBox="0 0 19 16" id="twiiter">
+				<path d="M17.0469 3.84602C17.0588 4.01449 17.0588 4.18371 17.0588 4.35219C17.0588 9.5 13.1408 15.4316 5.9798 15.4316C3.77365 15.4316 1.7241 14.7925 0 13.6837C0.313574 13.7197 0.614902 13.732 0.940352 13.732C2.76057 13.732 4.43643 13.1167 5.77459 12.068C4.96207 12.0531 4.17449 11.7848 3.52183 11.3006C2.86918 10.8164 2.38404 10.1404 2.13416 9.36715C2.37736 9.40554 2.62309 9.42563 2.8693 9.42727C3.21887 9.42727 3.56844 9.37902 3.89389 9.29479C3.01223 9.11633 2.21952 8.63819 1.65041 7.94157C1.0813 7.24495 0.770882 6.3728 0.771875 5.47326V5.42502C1.31144 5.72614 1.91453 5.89551 2.53197 5.91932C1.99755 5.56388 1.55935 5.08178 1.25639 4.51595C0.953442 3.95013 0.795152 3.31815 0.795625 2.67633C0.795625 1.95307 0.988594 1.28992 1.32629 0.711387C2.30439 1.91521 3.52459 2.90003 4.90775 3.60197C6.29092 4.30391 7.80618 4.7073 9.35527 4.786C9.29516 4.49654 9.25879 4.19559 9.25879 3.89426C9.25879 1.74822 10.9948 0 13.153 0C14.2738 0 15.2868 0.470176 15.9982 1.2298C16.8703 1.06186 17.7066 0.743682 18.4697 0.289453C18.1793 1.18941 17.5705 1.95247 16.7575 2.43549C17.5412 2.35088 18.3009 2.13379 19 1.83246C18.4669 2.60873 17.8066 3.28947 17.0469 3.84602Z" fill="white"/>
+		</symbol>
+
+		<symbol viewBox="0 0 19 19" id="facebook">
+				<path d="M18.9577 1.04521V17.9082C18.9577 18.488 18.488 18.9535 17.9125 18.9535H13.08V11.6158H15.5428L15.9109 8.75523H13.0757V6.92717C13.0757 6.09777 13.3042 5.53497 14.4933 5.53497H16.0082V2.97483C15.7459 2.94098 14.8488 2.86058 13.7993 2.86058C11.6158 2.86058 10.1178 4.19354 10.1178 6.64365V8.75523H7.64655V11.6158H10.1178V18.9577H1.04521C0.46971 18.9577 0 18.488 0 17.9125V1.04521C0 0.46971 0.46971 0 1.04521 0H17.9082C18.488 0 18.9577 0.46971 18.9577 1.04521Z" fill="white"/>
+		</symbol>
+	</svg>	
 </head>
 <body>
-		
+		<div class="container">
+			<div class="widget" id="trigger">
+				<a href="#modal" class="widget__btn">Открыть виджет</a>
+				<dialog class="widget__modal" id="modal" tabindex="-1">
+					<div class="widget__content">
+						<div class="widget__head">
+							<div class="widget-user">
+								<div class="widget-user__avatar"></div>
+								<div class="widget-user__info">
+									<h3 class="widget-user__name">Kriss Lamma</h3>
+									<p class="widget-user__desc">creative of alpaca</p>
+								</div>
+							</div>
+							<a href="#trigger" class="close">
+								<svg class="close__arrow" role="img" aria-label="стрелка вправо">
+									<use xlink:href="#arrow-right"/>
+								</svg>
+							</a>
+						</div>
+						<div class="widget__body">
+							<div class="widget-posts">
+								<div class="widget-posts__post">
+									<div class="widget-posts__header">
+										<div class="widget-posts__title">Max Raw</div>
+										<div class="widget-posts__date">09.05.2020</div>
+									</div>
+									<div class="widget-posts__text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, natus delectus! Vero est incidunt facere porro obcaecati. Nisi suscipit quam at odio repellat dolores, alias sint exercitationem neque recusandae quasi?
+									</div>
+								</div>
+
+								<div class="widget-posts__post">
+									<div class="widget-posts__header">
+										<div class="widget-posts__title">Nick Watman MR. C...</div>
+										<div class="widget-posts__date">08.05.2020</div>
+									</div>
+									<div class="widget-posts__text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, natus delectus! Vero est incidunt facere porro obcaecati. Nisi suscipit quam at odio repellat dolores, alias sint exercitationem neque recusandae quasi?
+									</div>
+								</div>
+
+								<div class="widget-posts__post">
+									<div class="widget-posts__header">
+										<div class="widget-posts__title">Nick Watman MR. C...</div>
+										<div class="widget-posts__date">08.05.2020</div>
+									</div>
+									<div class="widget-posts__text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, natus delectus! Vero est incidunt facere porro obcaecati. Nisi suscipit quam at odio repellat dolores, alias sint exercitationem neque neque recusandae quasi?
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget__footer">
+								<a href="#" class="widget__social">
+									<svg class="social__icon inst" role="img" aria-label="иконка instagram">
+										<use xlink:href="#inst"/>
+									</svg>
+								</a>
+
+								<a href="#" class="widget__social">
+									<svg class="social__icon twitter" role="img" aria-label="иконка twitter">
+										<use xlink:href="#twiiter"/>
+									</svg>
+								</a>
+
+								<a href="#" class="widget__social">
+									<svg class="social__icon facebooka" role="img" aria-label="иконка facebook">
+										<use xlink:href="#facebook"/>
+									</svg>
+								</a>
+						</div>
+					</div>
+				</dialog>
+			</div>
+		</div>
 </body>
 </html>

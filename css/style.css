@@ -183,6 +183,46 @@ body {
   max-width: 328px;
 }
 
+.widget__form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 21px;
+  margin-top: 16px;
+  background: #faf8f0;
+  border: 1px solid #043353;
+  border-radius: 8px;
+}
+
+.widget__form .input {
+  border: 1px solid #043353;
+  outline: none;
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+
+.widget__form .input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(4, 51, 83, 0.5);
+}
+
+.widget__form .input__name {
+  margin-top: 8px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.widget__form .btn {
+  display: inline-block;
+  border: none;
+  background: #043353;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 0px 8px 8px 0px;
+  cursor: pointer;
+}
+
 /* widget footer */
 
 .widget__footer {

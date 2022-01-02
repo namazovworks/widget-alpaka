@@ -29,86 +29,46 @@
 </head>
 <body>
 		<div class="container">
-			<div class="widget" id="trigger">
-				<a href="#modal" class="widget__btn">Открыть виджет</a>
-				<dialog class="widget__modal" id="modal" tabindex="-1">
-					<div class="widget__content">
-						<div class="widget__head">
-							<div class="widget-user">
-								<div class="widget-user__avatar"></div>
-								<div class="widget-user__info">
-									<h3 class="widget-user__name">Kriss Lamma</h3>
-									<p class="widget-user__desc">creative of alpaca</p>
-								</div>
-							</div>
-							<a href="#trigger" class="close">
-								<svg class="close__arrow" role="img" aria-label="стрелка вправо">
-									<use xlink:href="#arrow-right"/>
-								</svg>
-							</a>
+			<div class="widget _active" >
+				<div class="widget__head">
+					<div class="widget-user">
+						<div class="widget-user__avatar">
+							<img src="./img/user.jpg" alt="user-pic" class="widget-user__img">
+							<div class="widget-user__online"></div>
 						</div>
-						<div class="widget__body">
-							<div class="widget-posts">
-								<div class="widget-posts__post">
-									<div class="widget-posts__header">
-										<div class="widget-posts__title">Max Raw</div>
-										<div class="widget-posts__date">09.05.2020</div>
-									</div>
-									<div class="widget-posts__text">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, natus delectus! Vero est incidunt facere porro obcaecati. Nisi suscipit quam at odio repellat dolores, alias sint exercitationem neque recusandae quasi?
-									</div>
-								</div>
-
-								<div class="widget-posts__post">
-									<div class="widget-posts__header">
-										<div class="widget-posts__title">Nick Watman MR. C...</div>
-										<div class="widget-posts__date">08.05.2020</div>
-									</div>
-									<div class="widget-posts__text">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, natus delectus! Vero est incidunt facere porro obcaecati. Nisi suscipit quam at odio repellat dolores, alias sint exercitationem neque recusandae quasi?
-									</div>
-								</div>
-
-								<div class="widget-posts__post">
-									<div class="widget-posts__header">
-										<div class="widget-posts__title">Nick Watman MR. C...</div>
-										<div class="widget-posts__date">08.05.2020</div>
-									</div>
-									<div class="widget-posts__text">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, natus delectus! Vero est incidunt facere porro obcaecati. Nisi suscipit quam at odio repellat dolores, alias sint exercitationem neque neque recusandae quasi?
-									</div>
-								</div>
-							</div>
-
-							<form class="widget__form">
-								<input class="input" type="text" placeholder="Your email">
-								<div class="wrapper__input">
-									<input class="input input__name" type="text" placeholder="Your name">
-									<input class="btn" type="button" value="send">
-								</div>
-							</form>
-						</div>
-						<div class="widget__footer">
-								<a href="#" class="widget__social">
-									<svg class="social__icon inst" role="img" aria-label="иконка instagram">
-										<use xlink:href="#inst"/>
-									</svg>
-								</a>
-
-								<a href="#" class="widget__social">
-									<svg class="social__icon twitter" role="img" aria-label="иконка twitter">
-										<use xlink:href="#twiiter"/>
-									</svg>
-								</a>
-
-								<a href="#" class="widget__social">
-									<svg class="social__icon facebooka" role="img" aria-label="иконка facebook">
-										<use xlink:href="#facebook"/>
-									</svg>
-								</a>
+						<div class="widget-user__info">
+							<h3 class="widget-user__name">Kriss Lamma</h3>
+							<p class="widget-user__desc">creative of alpaca</p>
 						</div>
 					</div>
-				</dialog>
+					<button class="widget__arrow">
+						<svg class="close__arrow" role="img" aria-label="стрелка вправо">
+							<use xlink:href="#arrow-right"/>
+						</svg>
+					</button>
+				</div>
+				<div class="widget__body">
+					
+				</div>
+				<div class="widget__footer">
+					<a href="#" class="widget__social">
+						<svg class="social__icon inst" role="img" aria-label="иконка instagram">
+							<use xlink:href="#inst"/>
+						</svg>
+					</a>
+	
+					<a href="#" class="widget__social">
+						<svg class="social__icon twitter" role="img" aria-label="иконка twitter">
+							<use xlink:href="#twiiter"/>
+						</svg>
+					</a>
+	
+					<a href="#" class="widget__social">
+						<svg class="social__icon facebooka" role="img" aria-label="иконка facebook">
+							<use xlink:href="#facebook"/>
+						</svg>
+					</a>
+				</div>
 			</div>
 		</div>
 </body>

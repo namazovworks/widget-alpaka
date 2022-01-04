@@ -1,3 +1,4 @@
+/* common styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -87,6 +88,41 @@ body {
 .layer._active {
   opacity: 1;
   pointer-events: auto;
+}
+
+.input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  border: 1px solid #043353;
+  outline: none;
+  border-radius: 8px;
+  padding: 16px 24px;
+  width: 100%;
+}
+
+.input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(4, 51, 83, 0.5);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #043353;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 0px 8px 8px 0px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1f5e88;
 }
 
 /* widget header */
@@ -201,7 +237,7 @@ body {
   height: 24px;
 }
 
-.widget__arrow .close__arrow {
+.widget__arrow .arrow {
   width: 24px;
   height: 24px;
 }
@@ -299,7 +335,7 @@ body {
   max-width: 328px;
 }
 
-.widget__form {
+.form {
   display: flex;
   flex-direction: column;
   padding: 30px 21px;
@@ -308,44 +344,13 @@ body {
   border-radius: 8px;
 }
 
-.widget__form .input {
-  border: 1px solid #043353;
-  outline: none;
-  border-radius: 8px;
-  padding: 16px 24px;
-  width: 100%;
-}
-
-.widget__form .input::placeholder {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  color: rgba(4, 51, 83, 0.5);
-}
-
-.widget__form--bottom {
+.form__bottom {
   display: flex;
   margin-top: 8px;
 }
 
-.widget__form .input__name {
+.form .input--name {
   border-radius: 8px 0px 0px 8px;
-}
-
-.widget__form .btn {
-  display: inline-block;
-  border: none;
-  background: #043353;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 16px 24px;
-  border-radius: 0px 8px 8px 0px;
-  cursor: pointer;
-}
-
-.widget__form .btn:hover {
-  background: #1f5e88;
 }
 
 /* widget footer */
@@ -367,7 +372,7 @@ body {
   margin-right: 18px;
 }
 
-.social__icon {
+.widget__social .icon {
   width: 19px;
   height: 19px;
 }

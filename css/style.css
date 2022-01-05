@@ -107,12 +107,12 @@ body {
   color: rgba(4, 51, 83, 0.5);
 }
 
-.input:invalid:not(:placeholder-shown) {
+.input:invalid {
   border-color: #f2994a;
 }
 
-.input:valid:not(:placeholder-shown) {
-  border-color: #f2994a;
+.input:valid {
+  border-color: transparent;
 }
 
 .btn {

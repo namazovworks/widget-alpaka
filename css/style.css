@@ -210,8 +210,6 @@ body {
 
 .widget-user__img {
   display: block;
-  width: 68px;
-  height: 68px;
   object-fit: cover;
   border-radius: 100%;
 }

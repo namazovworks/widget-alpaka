@@ -299,18 +299,18 @@ body {
   overflow-y: auto;
 }
 
-.wiget-post:not(:last-child) {
+.widget-post:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.wiget-post__head {
+.widget-post__head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
 }
 
-.wiget-post__title {
+.widget-post__title {
   display: inline-block;
   max-width: 157px;
   font-family: "Roboto", sans-serif;
@@ -324,7 +324,7 @@ body {
   text-overflow: ellipsis;
 }
 
-.wiget-post__date {
+.widget-post__date {
   flex-shrink: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;

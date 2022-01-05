@@ -112,7 +112,7 @@ body {
 }
 
 .input:valid {
-  border-color: transparent;
+  border-color: green;
 }
 
 .btn {
